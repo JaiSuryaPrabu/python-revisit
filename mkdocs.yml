@@ -1,0 +1,61 @@
+site_name: Python Documentation
+# site_url: https://www.basictemplate.io
+site_description: Basic Python Concepts
+
+repo_url: https://github.com/JaiSuryaPrabu/python-revisit
+repo_name: JaiSuryaPrabu/python-revisit
+
+theme:
+  name: material
+  features:
+    - navigation.tabs
+    - navigation.sections
+    # - toc.integrate
+    - navigation.top
+    - content.tabs.link
+    - content.code.annotation
+    - content.code.copy
+    - search.suggest
+  language: en
+  palette:
+    - scheme: default
+      toggle:
+        icon: material/brightness-7 
+        name: Switch to dark mode
+      primary: indigo
+      accent: blue
+    - scheme: slate 
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode    
+      primary: blue
+      accent: indigo
+
+extra:
+  social:
+    - icon : fontawesome/brands/github-alt
+      link : https://github.com/JaiSuryaPrabu
+    - icon : fontawesome/brands/twitter
+      link : https://twitter.com/__Jaisurya
+    - icon : fontawesome/brands/linkedin
+      link : https://www.linkedin.com/in/jaisurya-prabakaran-3619aa226/
+
+markdown_extensions:
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - admonition
+  - pymdownx.arithmatex:
+      generic: true
+  - footnotes
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.mark
+  - attr_list
+  - pymdownx.emoji:
+      emoji_index: !!python/name:materialx.emoji.twemoji
+      emoji_generator: !!python/name:materialx.emoji.to_svg
+
+plugins: 
+  - mkdocs-jupyter
