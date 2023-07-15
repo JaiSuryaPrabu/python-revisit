@@ -1,6 +1,7 @@
 # Advanced Topics
 
 ## Lambda
+
 ### History
 * Lambda functions came from **lambda calculus**
 * It can *abstract* completely
@@ -147,4 +148,42 @@ The `Traceback` of an exception provides the name of the normal function but not
         ```
 * The decorator can be used with the `map()` function:
     ```py 
+    list(map(about_args(lambda x: x+2),range(3)))
     ```
+### Do not
+* Raise an exception in lambda function
+* Make complex **lambda** functions
+* Add **lambda** functions in a `class`
+
+### Appropriate use of *lambda*
+Lambda is used with the :
+* `map()`,
+* `filter()`,
+* `functools.reduce()`
+
+## Decorators
+
+> `Decorators` are a function that defines another function
+### Basic Syntax
+The **decorator** part :
+``` py linenums="1"
+def decorator(function_name):
+    # the wrapper part
+    def wrapper(*args,*kwargs):
+        # decorate of the function_name
+        result = function_name(*args,**kwargs)
+        return result
+    return wrapper
+```
+The **normal function** part :
+``` py linenums="1"
+@decorator
+def function():
+    # sample code
+    pass
+```
+
+## Use case
+1. Used in class methods.
+2. Used to add more flexiblity to function.
+3. Can be used for the entire class too.
