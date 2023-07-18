@@ -187,3 +187,60 @@ def function():
 1. Used in class methods.
 2. Used to add more flexiblity to function.
 3. Can be used for the entire class too.
+
+# Iterators and Iterables
+> The main difference between iterators and iterables is that iterator has `next()` method but iterables doesn't contains it
+## Iterators
+1. The basic syntax
+``` py linenums="1"
+class iterator:
+
+    # constructor
+    def __init__(self,sequence):
+        self.sequence = sequence
+        self.index = 0
+
+    # iter() method
+    def __iter__(self):
+        return iterator(self)
+
+    # iter() method needs next() method for iterators
+    def __next__(self):
+        length = len(self.sequence)
+        # logic of each element in the iterables
+        if (self.index < length):
+            value = self.sequence[self.index]
+            self.index += 1
+            return value
+        else:
+            # Stop Iteration is used to handle the inf loop
+            raise StopIteration
+```
+2. Using `Iterators()` class from `collections.abc`
+``` py linenums="1"
+from collections.abc import Iterators
+
+class iterator:
+    
+    # constructor
+    def __init__(self,sequence):
+        self.sequence = sequence
+        self.index = 0
+    
+    # there is no need of iter() method
+
+    def __next__(self):
+        length = len(self.sequence)
+        if self.index < length:
+            value = self.sequence[self.index]
+            self.index += 1
+            return value
+        else:
+            raise StopIteration
+```
+
+## Iterables
+1. Basic syntax
+``` py linenums="1"
+# code to be implemented
+```
