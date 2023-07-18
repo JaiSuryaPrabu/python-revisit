@@ -244,3 +244,16 @@ class iterator:
 ``` py linenums="1"
 # code to be implemented
 ```
+
+## Generators
+> `Generators` are functions that produce iterators using `yield` statement
+
+Basic syntax
+``` py linenums="1"
+def generators(sequence):
+    for element in sequence:
+        yield element
+
+for i in generators([1,2,3,4]):
+    print(i,end="\t")
+```
