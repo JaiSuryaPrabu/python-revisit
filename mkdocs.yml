@@ -10,7 +10,7 @@ theme:
   features:
     - navigation.tabs
     - navigation.sections
-    # - toc.integrate
+    - toc.integrate
     - navigation.top
     - content.tabs.link
     - content.code.annotation
