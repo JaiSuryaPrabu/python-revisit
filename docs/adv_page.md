@@ -248,3 +248,11 @@ Output
 ```
 1	2	3	4	5
 ```
+
+## Resource
+1. Real python docs:
+    * [OOP](https://realpython.com/python3-object-oriented-programming/)
+    * [Lambda](https://realpython.com/python-lambda/)
+    * [Decorator](https://realpython.com/primer-on-python-decorators/)
+    * [Iterators and Iterables](https://realpython.com/python-iterators-iterables/)
+    * [Generators](https://realpython.com/python-iterators-iterables/#creating-generator-iterators)

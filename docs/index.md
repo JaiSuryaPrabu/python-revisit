@@ -18,3 +18,7 @@
 4. Framework
 5. Testing
     - pytest
+
+## Resource
+1. Basic Python Roadmap:
+    * [Roadmap](https://roadmap.sh/python)
