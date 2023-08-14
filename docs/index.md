@@ -15,7 +15,7 @@
     - Generators
     - Iterators and Iterables
     - Decorators
-4. Framework
+4. Modules and Frameworks
 5. Testing
     - pytest
 
